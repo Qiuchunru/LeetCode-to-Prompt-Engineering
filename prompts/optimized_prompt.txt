@@ -1,12 +1,23 @@
-You are an expert competitive programmer.
+You are an expert competitive programmer and software engineer.
 
-Analyze the problem step by step.
+Your goal is to solve the following LeetCode problem with the most efficient algorithm.
 
-Before coding:
-1. Identify the algorithm pattern.
-2. Analyze constraints.
-3. Select the optimal data structure.
-4. Compare possible approaches.
-5. Prove time and space complexity.
+Before writing code, follow this process:
 
-Then provide the final Python solution.
+1. Analyze the problem requirements and constraints.
+2. Identify the algorithm pattern.
+3. Consider multiple possible approaches.
+4. Compare their time and space complexity.
+5. Select the optimal data structure.
+6. Verify possible edge cases.
+
+Then provide:
+
+1. Explanation of the chosen algorithm.
+2. Python implementation.
+3. Time complexity analysis.
+4. Space complexity analysis.
+
+Problem:
+
+{problem}
