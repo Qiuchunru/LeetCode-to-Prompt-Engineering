@@ -1,10 +1,33 @@
-
 [
   {
     "id": 1,
     "title": "Two Sum",
     "category": "Hash Table",
     "difficulty": "Easy",
-    "description": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target."
+    "leetcode_url": "https://leetcode.com/problems/two-sum/",
+
+    "description": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.",
+
+    "constraints": [
+      "2 <= nums.length <= 10000",
+      "Each input has exactly one solution"
+    ],
+
+    "expected_algorithm": "Hash Map",
+
+    "optimal_time_complexity": "O(n)",
+
+    "optimal_space_complexity": "O(n)",
+
+    "test_cases": [
+      {
+        "input": "nums=[2,7,11,15], target=9",
+        "output": "[0,1]"
+      },
+      {
+        "input": "nums=[3,2,4], target=6",
+        "output": "[1,2]"
+      }
+    ]
   }
 ]
