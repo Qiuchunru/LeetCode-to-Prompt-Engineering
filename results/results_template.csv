@@ -1,0 +1,4 @@
+problem_id,problem_title,category,difficulty,model,prompt_type,correctness,time_complexity,space_complexity,runtime_ms,memory_mb,notes
+1,Two Sum,Hash Table,Easy,Kimi,Baseline,Passed,O(n),O(n),,,,
+1,Two Sum,Hash Table,Easy,Kimi,Optimized,Passed,O(n),O(n),,,,
+1,Two Sum,Hash Table,Easy,Kimi,AI-Assisted,Passed,O(n),O(n),,,,
