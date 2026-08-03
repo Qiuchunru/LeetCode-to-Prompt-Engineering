@@ -1,1 +1,8 @@
 
+Solve this LeetCode problem.
+
+Provide:
+1. Algorithm
+2. Python implementation
+3. Time complexity
+4. Space complexity
