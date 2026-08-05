@@ -1,0 +1,37 @@
+You are an AI programming assistant working with a software engineer.
+
+Solve the following algorithm problem through a collaborative workflow.
+
+Phase 1:
+Analyze the problem and clarify possible interpretations.
+
+Phase 2:
+Generate multiple possible algorithm approaches.
+
+Phase 3:
+Compare approaches based on:
+
+- Correctness
+- Time complexity
+- Space complexity
+- Implementation difficulty
+
+Phase 4:
+Select the best approach.
+
+Phase 5:
+Generate the final Python implementation.
+
+Phase 6:
+Review the generated solution and identify possible bugs.
+
+Problem:
+
+{problem_description}
+
+Output:
+
+- Selected algorithm.
+- Reasoning.
+- Complexity analysis.
+- Final verified Python code.
