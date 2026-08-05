@@ -1,0 +1,155 @@
+\section{Evaluation Methodology}
+
+To investigate the effectiveness of prompt engineering for algorithmic problem
+solving, this research evaluates different prompting strategies using a unified
+benchmark framework.
+
+The evaluation focuses on both solution quality and algorithmic reasoning
+rather than only code generation.
+
+\subsection{Evaluation Objectives}
+
+The study compares three prompting strategies:
+
+\begin{enumerate}
+
+\item Baseline Prompt
+
+\item Optimized Algorithm Reasoning Prompt
+
+\item AI-Assisted Engineering Workflow
+
+\end{enumerate}
+
+Each strategy is evaluated using identical benchmark problems.
+
+\subsection{Benchmark Dataset}
+
+The benchmark consists of LeetCode-style programming problems from multiple
+algorithm categories, including:
+
+\begin{itemize}
+
+\item Arrays
+
+\item Hash Tables
+
+\item Strings
+
+\item Linked Lists
+
+\item Trees
+
+\item Graphs
+
+\item Dynamic Programming
+
+\item Greedy Algorithms
+
+\item Binary Search
+
+\item Backtracking
+
+\end{itemize}
+
+Problems are selected from Easy, Medium, and Hard difficulty levels.
+
+\subsection{Evaluation Metrics}
+
+Each generated solution is evaluated using the following criteria.
+
+\subsubsection{Correctness}
+
+Solutions are executed against predefined test cases.
+
+Metrics include:
+
+\begin{itemize}
+
+\item Pass rate
+
+\item Failed test cases
+
+\item Runtime errors
+
+\end{itemize}
+
+\subsubsection{Algorithm Quality}
+
+The generated solution is evaluated based on:
+
+\begin{itemize}
+
+\item Algorithm selection
+
+\item Data structure selection
+
+\item Code readability
+
+\item Explanation quality
+
+\end{itemize}
+
+\subsubsection{Complexity Analysis}
+
+The reported algorithm complexity is compared with the known optimal solution.
+
+Evaluation includes:
+
+\begin{itemize}
+
+\item Time complexity
+
+\item Space complexity
+
+\item Whether the optimal algorithm was selected
+
+\end{itemize}
+
+\subsubsection{Efficiency}
+
+Additional measurements include:
+
+\begin{itemize}
+
+\item Runtime
+
+\item Memory usage
+
+\item Number of reasoning steps
+
+\end{itemize}
+
+\subsection{Experimental Procedure}
+
+Each benchmark problem follows the same evaluation pipeline.
+
+\begin{enumerate}
+
+\item Load benchmark problem.
+
+\item Apply selected prompt strategy.
+
+\item Generate solution using the selected LLM.
+
+\item Execute generated code.
+
+\item Evaluate correctness.
+
+\item Compare complexity with the optimal solution.
+
+\item Record experimental results.
+
+\end{enumerate}
+
+All experiments use identical benchmark problems to ensure fairness between
+prompting strategies.
+
+\subsection{Expected Outcome}
+
+The proposed methodology allows quantitative comparison between traditional
+prompting and optimized prompt engineering.
+
+The results will provide insight into whether prompt engineering improves
+algorithmic reasoning, solution quality, and overall software engineering
+productivity.
