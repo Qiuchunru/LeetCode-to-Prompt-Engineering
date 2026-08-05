@@ -1,14 +1,20 @@
-\section{Results Analysis Plan}
-
-This section describes the methodology used to analyze experimental results.
-The analysis focuses on comparing different prompt engineering strategies and
-understanding their impact on algorithmic problem solving.
+\section{Results Analysis}
 
 
-\subsection{Performance Comparison}
+This section describes the planned analysis methods for evaluating the impact of
+different prompt engineering strategies.
 
-The primary objective of the analysis is to compare the performance of
-different prompting strategies:
+
+The analysis focuses on comparing whether structured prompting improves
+algorithmic problem-solving performance.
+
+
+
+\subsection{Overall Performance Comparison}
+
+
+The first analysis compares the overall performance of the three experimental
+groups:
 
 
 \begin{itemize}
@@ -22,174 +28,120 @@ different prompting strategies:
 \end{itemize}
 
 
-Each approach is evaluated using identical benchmark problems to ensure a fair
-comparison.
-
-
-
-\subsection{Correctness Analysis}
-
-
-The first analysis measures whether generated solutions successfully solve the
-benchmark problems.
-
-
-The following metrics are calculated:
+The comparison metrics include:
 
 
 \begin{itemize}
 
-\item Overall success rate.
+\item Average correctness score.
 
-\item Pass rate by difficulty level.
+\item Average runtime.
 
-\item Pass rate by algorithm category.
-
-\end{itemize}
-
-
-The correctness improvement between prompt strategies is calculated as:
-
-
-\[
-Improvement =
-\frac{New\ Performance - Baseline\ Performance}
-{Baseline\ Performance}
-\times 100\%
-\]
-
-
-\subsection{Algorithm Selection Analysis}
-
-
-Correct solutions are further analyzed based on algorithm quality.
-
-
-The analysis evaluates:
-
-
-\begin{itemize}
-
-\item Whether the selected algorithm is optimal.
-
-\item Whether the appropriate data structure is selected.
-
-\item Whether unnecessary complexity is introduced.
+\item Complexity score.
 
 \end{itemize}
 
 
 
-This analysis investigates whether prompt engineering improves algorithmic
-reasoning rather than only code generation.
-
-
-
-\subsection{Complexity Analysis}
-
-
-Generated solutions are compared with known optimal solutions.
-
-
-The evaluation considers:
-
-
-\begin{itemize}
-
-\item Time complexity accuracy.
-
-\item Space complexity accuracy.
-
-\item Difference from optimal complexity.
-
-\end{itemize}
-
-
-
-For example, a solution with:
-
-\[
-O(n^2)
-\]
-
-will be considered less efficient than:
-
-\[
-O(n)
-\]
-
-when the optimal solution requires linear complexity.
+The results will determine whether optimized prompting provides measurable
+advantages over direct LLM interaction.
 
 
 
 \subsection{Difficulty-Based Analysis}
 
 
-Performance will also be analyzed according to problem difficulty.
-
-
-The benchmark is divided into:
+The benchmark problems will be grouped by difficulty level:
 
 
 \begin{itemize}
 
-\item Easy problems.
+\item Easy.
 
-\item Medium problems.
+\item Medium.
 
-\item Hard problems.
+\item Hard.
 
 \end{itemize}
 
 
-This analysis investigates whether prompt engineering provides greater
-benefits for more complex algorithmic tasks.
+This analysis investigates whether prompt engineering provides greater benefits
+for more complex algorithmic problems.
 
 
 
-\subsection{Statistical Analysis}
+\subsection{Algorithm Category Analysis}
 
 
-The study will report:
+Performance differences will also be analyzed across algorithm categories:
 
 
 \begin{itemize}
 
-\item Average performance.
+\item Array problems.
 
-\item Success rate differences.
+\item Hash table problems.
 
-\item Relative improvement.
+\item Tree problems.
 
-\item Distribution across categories.
+\item Graph problems.
+
+\item Dynamic programming problems.
 
 \end{itemize}
 
 
-Where sufficient data is available, statistical tests may be applied to
-determine whether observed differences are significant.
+This analysis evaluates whether certain algorithm patterns are more suitable
+for AI-assisted problem solving.
 
 
 
-\subsection{Research Question Evaluation}
+\subsection{Error Analysis}
 
 
-The final analysis connects experimental results with research questions.
+Incorrect solutions will be manually analyzed to identify common failure
+patterns.
 
 
-\textbf{RQ1:}
-
-Whether optimized prompts improve solution correctness.
+Potential error categories include:
 
 
-\textbf{RQ2:}
+\begin{itemize}
 
-Whether prompt engineering improves algorithm and data structure selection.
+\item Incorrect algorithm selection.
+
+\item Complexity inefficiency.
+
+\item Missing edge cases.
+
+\item Implementation errors.
+
+\end{itemize}
 
 
-\textbf{RQ3:}
 
-How AI-assisted workflows may influence future software engineering skills.
+Understanding failure patterns provides insights into the limitations of
+LLM-assisted programming.
 
 
-The conclusions will be based on experimental evidence rather than assumptions.
+
+\subsection{Visualization}
+
+
+The final results will be presented using:
+
+
+\begin{itemize}
+
+\item Performance comparison tables.
+
+\item Accuracy comparison charts.
+
+\item Difficulty-based analysis graphs.
+
+\item Algorithm category comparisons.
+
+\end{itemize}
+
+
+These visualizations will support the evaluation of the research hypotheses.
