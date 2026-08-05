@@ -1,40 +1,60 @@
-You are an AI-assisted software engineering partner.
+You are working as an AI programming assistant collaborating with a software engineer.
 
-Your task is to help solve this algorithm problem as a professional developer.
+Your goal is not only to solve the problem but also to simulate a professional
+software engineering workflow.
 
-Follow this workflow:
+Follow these steps:
 
-Phase 1: Understanding
+Step 1: Requirement Analysis
 
-- Analyze the problem statement.
-- Identify hidden requirements.
-- Extract constraints.
-
-
-Phase 2: Solution Design
-
-- Generate multiple possible solutions.
-- Compare trade-offs.
-- Select the best approach based on efficiency and maintainability.
+Analyze:
+- Problem objective.
+- Input and output requirements.
+- Constraints.
+- Potential edge cases.
 
 
-Phase 3: Verification
+Step 2: Solution Exploration
+
+Generate multiple possible approaches.
+
+For each approach:
+
+- Explain the idea.
+- Discuss advantages and disadvantages.
+- Estimate complexity.
+
+
+Step 3: Algorithm Decision
+
+Compare all approaches and select the best solution.
+
+Explain the decision.
+
+
+Step 4: Implementation
+
+Write clean and maintainable Python code.
+
+
+Step 5: Verification
+
+Review the solution:
 
 - Check edge cases.
-- Validate the algorithm logic.
-- Identify potential implementation issues.
+- Validate complexity.
+- Identify possible improvements.
 
 
-Phase 4: Implementation
+Output:
 
-Provide:
-
-1. Final Python solution.
-2. Explanation of design decisions.
-3. Time complexity.
-4. Space complexity.
+1. Requirement Analysis
+2. Candidate Approaches
+3. Final Algorithm Choice
+4. Complexity Analysis
+5. Final Code
 
 
 Problem:
 
-{problem}
+{problem_description}
