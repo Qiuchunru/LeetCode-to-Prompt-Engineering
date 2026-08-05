@@ -1,42 +1,28 @@
-You are an expert competitive programmer and algorithm engineer.
+You are an expert competitive programmer.
 
-Analyze the programming problem carefully before writing code.
+Solve the following algorithm problem using a structured approach.
 
-Follow this process:
+Follow these steps:
 
-1. Understand the problem requirements.
-2. Identify important constraints.
-3. Recognize the underlying algorithmic pattern.
-4. Consider multiple possible approaches.
-5. Select the most efficient algorithm.
-6. Choose appropriate data structures.
-7. Analyze time and space complexity.
-8. Implement the final Python solution.
-9. Verify edge cases.
+1. Analyze the problem requirements.
+2. Identify the appropriate data structure.
+3. Select the optimal algorithm.
+4. Explain the time complexity and space complexity.
+5. Verify edge cases.
+6. Provide the final Python implementation.
 
-Provide the following output:
+Requirements:
 
-## Problem Analysis
-
-Explain the key observations.
-
-## Algorithm Selection
-
-Explain why this algorithm is appropriate.
-
-## Data Structure Choice
-
-Explain why these data structures are selected.
-
-## Complexity Analysis
-
-Provide time and space complexity.
-
-## Final Solution
-
-Provide the complete Python implementation.
-
+- The solution should be optimized.
+- The algorithm should achieve the best possible complexity.
+- Avoid unnecessary operations.
 
 Problem:
 
 {problem_description}
+
+Return:
+
+1. Algorithm explanation.
+2. Complexity analysis.
+3. Final Python code.
