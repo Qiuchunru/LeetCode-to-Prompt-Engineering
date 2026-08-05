@@ -1,0 +1,221 @@
+\section{Experimental Protocol}
+
+This section describes the experimental procedure used to evaluate different
+prompt engineering strategies for algorithmic problem solving.
+
+The objective is to ensure that all approaches are evaluated under the same
+conditions and that the results are reproducible.
+
+
+\subsection{Experimental Environment}
+
+All experiments are conducted using a unified evaluation environment.
+
+The environment contains:
+
+\begin{itemize}
+
+\item Selected Large Language Models.
+
+\item Benchmark dataset.
+
+\item Prompt templates.
+
+\item Automated code evaluation system.
+
+\item Result analysis pipeline.
+
+\end{itemize}
+
+
+The same benchmark problems and evaluation criteria are applied to all
+experimental groups.
+
+
+\subsection{Experiment Workflow}
+
+Each experiment follows the same workflow:
+
+
+\begin{enumerate}
+
+\item Select a benchmark problem from the dataset.
+
+\item Apply one selected prompt strategy.
+
+\item Send the problem description to the LLM.
+
+\item Receive the generated solution.
+
+\item Extract generated source code.
+
+\item Execute the solution using predefined test cases.
+
+\item Measure correctness and performance.
+
+\item Store the results for analysis.
+
+\end{enumerate}
+
+
+
+The complete workflow is:
+
+
+\begin{center}
+
+Problem Selection
+
+$\rightarrow$
+
+Prompt Selection
+
+$\rightarrow$
+
+LLM Generation
+
+$\rightarrow$
+
+Code Execution
+
+$\rightarrow$
+
+Performance Evaluation
+
+$\rightarrow$
+
+Result Storage
+
+\end{center}
+
+
+
+\subsection{Prompt Groups}
+
+
+The experiment compares three prompt configurations.
+
+
+\subsubsection{Baseline Prompt}
+
+
+The baseline approach uses a simple instruction:
+
+
+\begin{quote}
+
+Solve this programming problem.
+
+\end{quote}
+
+
+This represents the common usage scenario where developers directly ask an
+LLM for a solution.
+
+
+
+\subsubsection{Optimized Prompt}
+
+
+The optimized prompt introduces structured reasoning requirements.
+
+The model is instructed to:
+
+
+\begin{itemize}
+
+\item Analyze problem constraints.
+
+\item Identify algorithm patterns.
+
+\item Select appropriate data structures.
+
+\item Compare possible approaches.
+
+\item Provide complexity analysis.
+
+\end{itemize}
+
+
+
+\subsubsection{AI-Assisted Workflow}
+
+
+The AI-assisted workflow simulates a collaborative programming process.
+
+The model performs multiple stages:
+
+
+\begin{enumerate}
+
+\item Requirement analysis.
+
+\item Algorithm brainstorming.
+
+\item Solution comparison.
+
+\item Edge case verification.
+
+\item Final implementation.
+
+\end{enumerate}
+
+
+
+\subsection{Result Collection}
+
+
+For each experiment, the following information is recorded:
+
+
+\begin{itemize}
+
+\item Problem identifier.
+
+\item Model name.
+
+\item Prompt strategy.
+
+\item Generated solution.
+
+\item Correctness result.
+
+\item Runtime performance.
+
+\item Memory consumption.
+
+\item Time complexity.
+
+\item Space complexity.
+
+\end{itemize}
+
+
+
+The collected results are stored in a structured format for further statistical
+analysis.
+
+
+
+\subsection{Reproducibility}
+
+
+To improve reproducibility, this project will open-source:
+
+
+\begin{itemize}
+
+\item Benchmark dataset.
+
+\item Prompt templates.
+
+\item Evaluation scripts.
+
+\item Experimental results.
+
+\item Analysis code.
+
+\end{itemize}
+
+
+This allows other researchers to reproduce and extend the experiments.
