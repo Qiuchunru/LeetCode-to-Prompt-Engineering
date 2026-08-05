@@ -1,0 +1,147 @@
+\section{Benchmark Dataset Design}
+
+\subsection{Dataset Objective}
+
+The objective of the benchmark dataset is to evaluate how different prompt
+engineering strategies influence Large Language Model performance on algorithmic
+problem-solving tasks.
+
+The dataset is designed to represent common algorithm categories encountered
+in computer science education and software engineering technical interviews.
+
+
+\subsection{Problem Selection}
+
+The benchmark consists of LeetCode-style algorithm problems selected from
+multiple categories.
+
+Problems are selected based on the following criteria:
+
+\begin{itemize}
+
+\item Representative algorithmic patterns.
+
+\item Clear problem definitions.
+
+\item Available test cases.
+
+\item Well-established optimal solutions.
+
+\item Known time and space complexity.
+
+\end{itemize}
+
+
+\subsection{Algorithm Categories}
+
+The benchmark includes problems from the following categories:
+
+\begin{itemize}
+
+\item Array and String Processing
+
+\item Hash Table
+
+\item Two Pointers
+
+\item Sliding Window
+
+\item Linked List
+
+\item Stack and Queue
+
+\item Binary Search
+
+\item Tree
+
+\item Graph
+
+\item Dynamic Programming
+
+\item Greedy Algorithms
+
+\item Backtracking
+
+\end{itemize}
+
+
+\subsection{Difficulty Distribution}
+
+To evaluate performance across different complexity levels, problems are
+divided into three difficulty categories:
+
+\begin{table}[h]
+
+\centering
+
+\begin{tabular}{lll}
+
+\toprule
+
+Difficulty & Description & Purpose \\
+
+\midrule
+
+Easy & Basic algorithm patterns & Evaluate fundamental reasoning \\
+
+Medium & Multiple-step reasoning & Evaluate algorithm selection \\
+
+Hard & Complex optimization problems & Evaluate advanced reasoning \\
+
+\bottomrule
+
+\end{tabular}
+
+\caption{Benchmark difficulty distribution}
+
+\end{table}
+
+
+
+\subsection{Dataset Size}
+
+The initial benchmark is designed with approximately:
+
+\begin{itemize}
+
+\item 50 problems for initial evaluation.
+
+\item 100+ problems for extended experiments.
+
+\end{itemize}
+
+
+The benchmark size balances experimental cost and statistical reliability.
+
+
+\subsection{Problem Metadata}
+
+Each benchmark problem contains:
+
+\begin{itemize}
+
+\item Problem identifier.
+
+\item Problem title.
+
+\item Algorithm category.
+
+\item Difficulty level.
+
+\item Problem description.
+
+\item Constraints.
+
+\item Expected optimal algorithm.
+
+\item Optimal time complexity.
+
+\item Optimal space complexity.
+
+\item Test cases.
+
+\end{itemize}
+
+
+The dataset structure enables automated evaluation and reproducible
+experiments.
