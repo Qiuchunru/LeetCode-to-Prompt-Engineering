@@ -1,155 +1,179 @@
 \section{Evaluation Methodology}
 
-To investigate the effectiveness of prompt engineering for algorithmic problem
-solving, this research evaluates different prompting strategies using a unified
-benchmark framework.
 
-The evaluation focuses on both solution quality and algorithmic reasoning
-rather than only code generation.
+To evaluate the impact of prompt engineering on algorithmic problem solving,
+this study evaluates generated solutions using multiple quantitative metrics.
 
-\subsection{Evaluation Objectives}
+The evaluation focuses on solution correctness, algorithm quality, computational
+efficiency, and execution performance.
 
-The study compares three prompting strategies:
 
-\begin{enumerate}
 
-\item Baseline Prompt
+\subsection{Correctness Evaluation}
 
-\item Optimized Algorithm Reasoning Prompt
 
-\item AI-Assisted Engineering Workflow
+The primary evaluation metric is solution correctness.
 
-\end{enumerate}
 
-Each strategy is evaluated using identical benchmark problems.
+Each generated Python solution is executed against predefined test cases from
+the benchmark dataset.
 
-\subsection{Benchmark Dataset}
 
-The benchmark consists of LeetCode-style programming problems from multiple
-algorithm categories, including:
+The correctness score is calculated as:
 
-\begin{itemize}
 
-\item Arrays
+\[
+Correctness = \frac{Passed\ Test\ Cases}{Total\ Test\ Cases}
+\]
 
-\item Hash Tables
 
-\item Strings
+A higher correctness score indicates that the generated solution successfully
+solves more programming tasks.
 
-\item Linked Lists
 
-\item Trees
 
-\item Graphs
+\subsection{Algorithm Selection Evaluation}
 
-\item Dynamic Programming
 
-\item Greedy Algorithms
+Beyond correctness, this research evaluates whether the generated solution
+selects an appropriate algorithmic approach.
 
-\item Binary Search
 
-\item Backtracking
-
-\end{itemize}
-
-Problems are selected from Easy, Medium, and Hard difficulty levels.
-
-\subsection{Evaluation Metrics}
-
-Each generated solution is evaluated using the following criteria.
-
-\subsubsection{Correctness}
-
-Solutions are executed against predefined test cases.
-
-Metrics include:
+The evaluation compares:
 
 \begin{itemize}
 
-\item Pass rate
+\item Selected algorithm pattern.
 
-\item Failed test cases
+\item Expected optimal algorithm.
 
-\item Runtime errors
+\item Data structure usage.
 
 \end{itemize}
 
-\subsubsection{Algorithm Quality}
 
-The generated solution is evaluated based on:
+For example, a solution using a hash table for a two-sum problem is considered
+more appropriate than a brute-force nested loop solution.
+
+
+
+\subsection{Complexity Evaluation}
+
+
+Generated solutions are analyzed based on computational complexity.
+
+
+The evaluation considers:
+
 
 \begin{itemize}
 
-\item Algorithm selection
+\item Time complexity.
 
-\item Data structure selection
-
-\item Code readability
-
-\item Explanation quality
+\item Space complexity.
 
 \end{itemize}
 
-\subsubsection{Complexity Analysis}
 
-The reported algorithm complexity is compared with the known optimal solution.
+The generated complexity is compared with the expected optimal complexity
+provided by the benchmark dataset.
 
-Evaluation includes:
+
+A complexity score is assigned:
+
+
+\[
+Complexity\ Score =
+\frac{Generated\ Efficiency}{Optimal\ Efficiency}
+\]
+
+
+This metric evaluates whether prompt engineering helps models produce more
+optimized algorithms.
+
+
+
+\subsection{Runtime Performance}
+
+
+Each generated program is executed in a controlled environment.
+
+
+Runtime performance is measured using:
 
 \begin{itemize}
 
-\item Time complexity
+\item Execution time.
 
-\item Space complexity
+\item Memory usage.
 
-\item Whether the optimal algorithm was selected
+\item Successful completion.
 
 \end{itemize}
 
-\subsubsection{Efficiency}
 
-Additional measurements include:
+Runtime measurements are averaged across multiple test executions to reduce
+random variation.
+
+
+
+\subsection{Prompt Strategy Comparison}
+
+
+The experiment compares three prompting strategies:
+
+
+\begin{table}[h]
+
+\centering
+
+\begin{tabular}{lll}
+
+\toprule
+
+Strategy & Description & Purpose \\
+
+\midrule
+
+Baseline & Direct problem solving prompt & Measure default LLM capability \\
+
+Optimized & Structured algorithm reasoning prompt & Evaluate prompt improvement \\
+
+AI-Assisted & Multi-step engineering workflow & Evaluate collaborative workflow \\
+
+\bottomrule
+
+\end{tabular}
+
+
+\caption{Prompt evaluation strategies}
+
+\end{table}
+
+
+
+The final comparison analyzes whether more structured prompting strategies
+provide measurable improvements over direct LLM interaction.
+
+
+
+\subsection{Statistical Analysis}
+
+
+The experiment reports:
 
 \begin{itemize}
 
-\item Runtime
+\item Average correctness score.
 
-\item Memory usage
+\item Average runtime.
 
-\item Number of reasoning steps
+\item Complexity improvement.
+
+\item Performance differences among prompt strategies.
 
 \end{itemize}
 
-\subsection{Experimental Procedure}
 
-Each benchmark problem follows the same evaluation pipeline.
-
-\begin{enumerate}
-
-\item Load benchmark problem.
-
-\item Apply selected prompt strategy.
-
-\item Generate solution using the selected LLM.
-
-\item Execute generated code.
-
-\item Evaluate correctness.
-
-\item Compare complexity with the optimal solution.
-
-\item Record experimental results.
-
-\end{enumerate}
-
-All experiments use identical benchmark problems to ensure fairness between
-prompting strategies.
-
-\subsection{Expected Outcome}
-
-The proposed methodology allows quantitative comparison between traditional
-prompting and optimized prompt engineering.
-
-The results will provide insight into whether prompt engineering improves
-algorithmic reasoning, solution quality, and overall software engineering
-productivity.
+These measurements are used to determine whether prompt engineering provides
+significant benefits for algorithmic problem solving.
