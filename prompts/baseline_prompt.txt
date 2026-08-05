@@ -1,11 +1,11 @@
-Solve the following LeetCode problem.
+Solve the following programming problem.
 
 Provide:
-1. The algorithm approach.
-2. Python implementation.
+1. The final Python solution.
+2. A brief explanation.
 3. Time complexity.
 4. Space complexity.
 
 Problem:
 
-{problem}
+{problem_description}
