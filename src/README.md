@@ -1,318 +1,186 @@
-# Source Code Structure
+# Source Code Implementation
 
-This directory contains the implementation of the LLM-based algorithm evaluation framework for the research project:
+This directory contains the implementation of the LLM-based algorithm
+evaluation framework.
 
-**From LeetCode to Prompt Engineering**
+The goal of this system is to automatically evaluate how different prompt
+engineering strategies influence algorithmic problem solving.
 
-The source code will implement an automated pipeline to evaluate how different prompt strategies influence LLM-based algorithm problem solving.
 
----
+# System Workflow
 
-# Architecture Overview
-
-The complete system workflow:
 
 ```
-LeetCode Dataset
+Benchmark Dataset
 
-        ↓
+        |
 
-Prompt Strategy Selection
+        v
 
-        ↓
+Dataset Loader
 
-LLM API Request
+        |
 
-        ↓
+        v
 
-Generated Algorithm Solution
+Prompt Manager
 
-        ↓
+        |
 
-Automated Evaluation
+        v
 
-        ↓
+LLM Client
 
-Experiment Results
+        |
 
-        ↓
+        v
 
-Research Analysis
+Generated Solution
+
+        |
+
+        v
+
+Code Evaluator
+
+        |
+
+        v
+
+Experiment Recorder
+
+        |
+
+        v
+
+Result Analysis
 ```
 
----
 
-# Module Design
+# Directory Structure
 
-## 1. LLM Runner
-
-File:
-
-```
-llm_runner.py
-```
-
-Purpose:
-
-Responsible for interacting with Large Language Models and generating algorithm solutions.
-
-Main responsibilities:
-
-- Load different prompt templates.
-- Send LeetCode problems to LLM APIs.
-- Generate Python solutions.
-- Store model responses.
-- Support multiple LLM models.
-
-Expected input:
-
-```
-Problem Description
-+
-Prompt Template
-+
-LLM Model
-```
-
-Expected output:
-
-```
-Generated Code Solution
-+
-Algorithm Explanation
-+
-Complexity Analysis
-```
-
----
-
-## 2. Solution Evaluator
-
-File:
-
-```
-evaluator.py
-```
-
-Purpose:
-
-Automatically evaluate generated solutions produced by LLMs.
-
-
-Evaluation includes:
-
-### Correctness Evaluation
-
-- Execute generated code.
-- Run predefined test cases.
-- Check accepted or failed results.
-
-
-### Efficiency Evaluation
-
-- Measure runtime performance.
-- Analyze memory usage.
-- Compare algorithm complexity.
-
-
-### Quality Evaluation
-
-- Data structure selection.
-- Algorithm pattern recognition.
-- Explanation quality.
-
-
-Expected workflow:
-
-```
-Generated Code
-
-        ↓
-
-Test Cases
-
-        ↓
-
-Execution Environment
-
-        ↓
-
-Evaluation Results
-```
-
----
-
-## 3. Experiment Runner
-
-File:
-
-```
-experiment_runner.py
-```
-
-Purpose:
-
-Automate large-scale benchmark experiments.
-
-
-Responsibilities:
-
-- Load LeetCode benchmark dataset.
-- Select different prompt strategies.
-- Query LLM models.
-- Evaluate generated solutions.
-- Save experiment results.
-
-
-Workflow:
-
-```
-Dataset
-
-↓
-
-Prompt A / Prompt B / Prompt C
-
-↓
-
-LLM Generation
-
-↓
-
-Automatic Evaluation
-
-↓
-
-Results CSV
-```
-
----
-
-## 4. Result Analysis Module
-
-File:
-
-```
-analysis.py
-```
-
-Purpose:
-
-Analyze experimental results and generate research insights.
-
-
-Responsibilities:
-
-- Calculate success rate.
-- Compare prompt strategies.
-- Generate statistical summaries.
-- Create visualization figures.
-- Prepare data for research publication.
-
-
----
-
-# Planned Project Structure
 
 ```
 src/
 
-├── llm_runner.py
+├── main.py
 
-├── evaluator.py
+├── config.py
 
-├── experiment_runner.py
+│
+├── dataset/
 
-└── analysis.py
+│   ├── loader.py
+
+│   └── schema.py
+
+│
+├── llm/
+
+│   ├── client.py
+
+│   └── prompt_manager.py
+
+│
+├── evaluation/
+
+│   ├── evaluator.py
+
+│   └── code_runner.py
+
+│
+├── experiment/
+
+│   ├── runner.py
+
+│   └── recorder.py
+
+│
+└── analysis/
+
+    └── report.py
 ```
 
----
 
-# Implementation Technology
-
-Programming Language:
-
-- Python
+# Module Description
 
 
-Libraries:
+## Dataset Module
 
-- OpenAI API compatible clients
-- Pandas
-- NumPy
-- Matplotlib
-- JSON
-- Subprocess
+Responsible for loading and managing benchmark problems.
+
+Functions:
+
+- Load JSON dataset.
+- Validate problem format.
+- Provide problem information.
 
 
 ---
 
-# Development Roadmap
+## LLM Module
 
-## Phase 1: Framework Design
+Responsible for communication with Large Language Models.
 
-Status:
+Functions:
 
-Completed
-
-
-Tasks:
-
-- Define research question.
-- Design experiment methodology.
-- Create benchmark structure.
+- Manage API requests.
+- Load prompt templates.
+- Generate solutions.
+- Store model responses.
 
 
-## Phase 2: LLM Integration
+---
 
-Status:
+## Evaluation Module
 
-Planned
+Responsible for evaluating generated code.
 
+Evaluation metrics:
 
-Tasks:
-
-- Connect LLM API.
-- Implement prompt loading.
-- Generate algorithm solutions.
-
-
-## Phase 3: Automated Evaluation
-
-Status:
-
-Planned
+- Correctness.
+- Runtime.
+- Memory usage.
+- Complexity.
 
 
-Tasks:
+---
 
-- Execute generated code.
-- Validate test cases.
-- Measure performance.
+## Experiment Module
 
+Responsible for running automated experiments.
 
-## Phase 4: Research Analysis
+Functions:
 
-Status:
-
-Planned
-
-
-Tasks:
-
+- Execute multiple problems.
 - Compare prompt strategies.
-- Generate experimental results.
-- Prepare research paper.
+- Save experiment results.
 
 
 ---
 
-# Current Status
+## Analysis Module
 
-Research framework design completed.
+Responsible for analyzing experiment results.
 
-Future work:
+Functions:
 
-- Implement the LLM evaluation pipeline.
-- Run benchmark experiments.
-- Analyze the impact of prompt engineering on algorithmic problem solving.
+- Generate statistics.
+- Compare strategies.
+- Create research figures.
+
+
+# Implementation Status
+
+Current status:
+
+Architecture design completed.
+
+
+Future implementation:
+
+- LLM API integration.
+- Dataset loader.
+- Automated evaluator.
+- Experiment pipeline.
+- Result visualization.
