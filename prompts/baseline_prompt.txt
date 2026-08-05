@@ -1,11 +1,9 @@
 Solve the following programming problem.
 
-Provide:
-1. The final Python solution.
-2. A brief explanation.
-3. Time complexity.
-4. Space complexity.
+Provide a Python solution.
 
 Problem:
 
 {problem_description}
+
+Return only the final code.
