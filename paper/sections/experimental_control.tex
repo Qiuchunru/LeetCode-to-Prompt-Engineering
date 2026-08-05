@@ -1,0 +1,142 @@
+\section{Experimental Control and Model Configuration}
+
+To evaluate the impact of prompt engineering on algorithmic problem solving,
+this study maintains a controlled experimental environment.
+
+The objective is to isolate the influence of prompt strategies while keeping
+other experimental factors consistent.
+
+
+\subsection{Language Model Selection}
+
+
+A single Large Language Model is selected for the initial experiment.
+
+Using one fixed model allows the study to focus on the effect of different
+prompting strategies rather than differences between model capabilities.
+
+
+The selected model configuration includes:
+
+\begin{itemize}
+
+\item Model name: Kimi
+
+\item Model version: kimi-k2.6
+
+\item API interface: OpenAI-compatible API
+
+\item Programming language: Python
+
+\end{itemize}
+
+
+
+\subsection{Generation Parameters}
+
+
+All experiments use identical generation parameters.
+
+
+The default configuration is:
+
+
+\begin{itemize}
+
+\item Temperature: 0.2
+
+\item Maximum output tokens: 4096
+
+\item Programming language: Python
+
+\end{itemize}
+
+
+
+A low temperature value is selected to reduce randomness and improve
+experimental reproducibility.
+
+
+
+\subsection{Controlled Variables}
+
+
+The following variables remain constant:
+
+
+\begin{itemize}
+
+\item Benchmark dataset.
+
+\item Large Language Model.
+
+\item Model parameters.
+
+\item Programming language.
+
+\item Evaluation environment.
+
+\end{itemize}
+
+
+The only variable changed between experiments is the prompt strategy.
+
+
+
+\subsection{Experimental Groups}
+
+
+The experiment contains three groups:
+
+
+\begin{table}[h]
+
+\centering
+
+\begin{tabular}{lll}
+
+\toprule
+
+Group & Prompt Type & Purpose \\
+
+\midrule
+
+G1 & Baseline Prompt & Direct LLM usage \\
+
+G2 & Optimized Prompt & Structured prompt engineering \\
+
+G3 & AI-Assisted Workflow & Multi-step AI collaboration \\
+
+\bottomrule
+
+\end{tabular}
+
+
+\caption{Experimental groups}
+
+\end{table}
+
+
+
+\subsection{Reproducibility}
+
+
+To improve reproducibility, this project provides:
+
+
+\begin{itemize}
+
+\item Prompt templates.
+
+\item Dataset format.
+
+\item Experiment scripts.
+
+\item Evaluation framework.
+
+\item Result files.
+
+\end{itemize}
+
+
+The complete implementation will be publicly available through GitHub.
