@@ -1,0 +1,52 @@
+[
+    {
+        "problem_id": 1,
+        "title": "Two Sum",
+        "difficulty": "Easy",
+        "category": "Hash Table",
+        "description": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.",
+        "expected_algorithm": "Hash Table",
+        "optimal_time_complexity": "O(n)",
+        "optimal_space_complexity": "O(n)",
+        "test_cases": [
+            {
+                "input": "nums=[2,7,11,15], target=9",
+                "output": "[0,1]"
+            }
+        ]
+    },
+
+    {
+        "problem_id": 2,
+        "title": "Reverse String",
+        "difficulty": "Easy",
+        "category": "Two Pointers",
+        "description": "Reverse a string represented as an array of characters.",
+        "expected_algorithm": "Two Pointers",
+        "optimal_time_complexity": "O(n)",
+        "optimal_space_complexity": "O(1)",
+        "test_cases": [
+            {
+                "input": "s=['h','e','l','l','o']",
+                "output": "['o','l','l','e','h']"
+            }
+        ]
+    },
+
+    {
+        "problem_id": 3,
+        "title": "Binary Search",
+        "difficulty": "Easy",
+        "category": "Binary Search",
+        "description": "Given a sorted array of integers, return the index of target.",
+        "expected_algorithm": "Binary Search",
+        "optimal_time_complexity": "O(log n)",
+        "optimal_space_complexity": "O(1)",
+        "test_cases": [
+            {
+                "input": "nums=[-1,0,3,5,9,12], target=9",
+                "output": "4"
+            }
+        ]
+    }
+]
