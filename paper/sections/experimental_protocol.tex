@@ -1,221 +1,161 @@
 \section{Experimental Protocol}
 
+
 This section describes the experimental procedure used to evaluate different
-prompt engineering strategies for algorithmic problem solving.
-
-The objective is to ensure that all approaches are evaluated under the same
-conditions and that the results are reproducible.
+prompting strategies for algorithmic problem solving.
 
 
-\subsection{Experimental Environment}
 
-All experiments are conducted using a unified evaluation environment.
+\subsection{Benchmark Preparation}
 
-The environment contains:
+
+The experiment uses a curated benchmark dataset containing LeetCode-style
+algorithm problems.
+
+
+Each problem includes:
 
 \begin{itemize}
 
-\item Selected Large Language Models.
+\item Problem description.
 
-\item Benchmark dataset.
+\item Difficulty level.
 
-\item Prompt templates.
+\item Algorithm category.
 
-\item Automated code evaluation system.
+\item Expected optimal approach.
 
-\item Result analysis pipeline.
+\item Test cases.
 
 \end{itemize}
 
 
-The same benchmark problems and evaluation criteria are applied to all
-experimental groups.
+
+The dataset covers multiple algorithm categories including arrays, hash tables,
+linked lists, trees, graphs, and dynamic programming.
 
 
-\subsection{Experiment Workflow}
 
-Each experiment follows the same workflow:
+\subsection{LLM Solution Generation}
+
+
+For each benchmark problem, the selected Large Language Model generates
+solutions under three different prompt conditions:
 
 
 \begin{enumerate}
 
-\item Select a benchmark problem from the dataset.
+\item Baseline Prompt.
 
-\item Apply one selected prompt strategy.
+\item Optimized Prompt.
 
-\item Send the problem description to the LLM.
-
-\item Receive the generated solution.
-
-\item Extract generated source code.
-
-\item Execute the solution using predefined test cases.
-
-\item Measure correctness and performance.
-
-\item Store the results for analysis.
+\item AI-Assisted Workflow Prompt.
 
 \end{enumerate}
 
 
+The same model configuration and generation parameters are used for all
+experiments to ensure fair comparison.
 
-The complete workflow is:
+
+
+\subsection{Automated Evaluation Pipeline}
+
+
+The evaluation pipeline follows the following procedure:
 
 
 \begin{center}
 
-Problem Selection
+Problem Input
 
 $\rightarrow$
 
-Prompt Selection
+Prompt Generation
 
 $\rightarrow$
 
-LLM Generation
+LLM Response
 
 $\rightarrow$
 
-Code Execution
+Code Extraction
 
 $\rightarrow$
 
-Performance Evaluation
+Program Execution
 
 $\rightarrow$
 
-Result Storage
+Metric Calculation
 
 \end{center}
 
 
 
-\subsection{Prompt Groups}
-
-
-The experiment compares three prompt configurations.
-
-
-\subsubsection{Baseline Prompt}
-
-
-The baseline approach uses a simple instruction:
-
-
-\begin{quote}
-
-Solve this programming problem.
-
-\end{quote}
-
-
-This represents the common usage scenario where developers directly ask an
-LLM for a solution.
+Generated programs are automatically executed against benchmark test cases.
 
 
 
-\subsubsection{Optimized Prompt}
+\subsection{Experiment Repetition}
 
 
-The optimized prompt introduces structured reasoning requirements.
-
-The model is instructed to:
-
-
-\begin{itemize}
-
-\item Analyze problem constraints.
-
-\item Identify algorithm patterns.
-
-\item Select appropriate data structures.
-
-\item Compare possible approaches.
-
-\item Provide complexity analysis.
-
-\end{itemize}
+To reduce randomness caused by LLM generation, experiments may be repeated
+multiple times for each prompt strategy.
 
 
-
-\subsubsection{AI-Assisted Workflow}
-
-
-The AI-assisted workflow simulates a collaborative programming process.
-
-The model performs multiple stages:
-
-
-\begin{enumerate}
-
-\item Requirement analysis.
-
-\item Algorithm brainstorming.
-
-\item Solution comparison.
-
-\item Edge case verification.
-
-\item Final implementation.
-
-\end{enumerate}
+The final result is calculated using the average performance across runs.
 
 
 
 \subsection{Result Collection}
 
 
-For each experiment, the following information is recorded:
+For each experiment instance, the system records:
 
 
 \begin{itemize}
 
 \item Problem identifier.
 
-\item Model name.
-
 \item Prompt strategy.
 
 \item Generated solution.
 
-\item Correctness result.
+\item Correctness score.
 
 \item Runtime performance.
 
-\item Memory consumption.
-
-\item Time complexity.
-
-\item Space complexity.
+\item Complexity evaluation.
 
 \end{itemize}
 
 
 
-The collected results are stored in a structured format for further statistical
-analysis.
+The collected results are stored in structured CSV and JSON formats for further
+analysis and visualization.
 
 
 
 \subsection{Reproducibility}
 
 
-To improve reproducibility, this project will open-source:
+To enable reproducibility, this project provides:
 
 
 \begin{itemize}
 
-\item Benchmark dataset.
+\item Dataset format.
 
 \item Prompt templates.
 
-\item Evaluation scripts.
+\item Experiment scripts.
 
-\item Experimental results.
+\item Evaluation framework.
 
-\item Analysis code.
+\item Result processing tools.
 
 \end{itemize}
 
 
-This allows other researchers to reproduce and extend the experiments.
+The complete implementation will be publicly available through GitHub.
