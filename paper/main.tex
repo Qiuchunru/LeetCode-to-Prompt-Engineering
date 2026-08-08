@@ -8,12 +8,10 @@
 
 \geometry{margin=1in}
 
-
 \title{
 From LeetCode to Prompt Engineering:
 Investigating the Impact of LLM-Assisted Programming on Algorithmic Problem Solving
 }
-
 
 \author{
 Chunru Qiu\\
@@ -21,17 +19,11 @@ Department of Computer Science\\
 Concordia University
 }
 
-
 \date{2026}
-
 
 \begin{document}
 
-
 \maketitle
-
-
-\begin{abstract}
 
 \begin{abstract}
 
@@ -62,11 +54,6 @@ algorithm training, technical interview preparation, and the evolving skill
 requirements of software engineers.
 
 \end{abstract}
-
-
-\end{abstract}
-
-
 
 
 \section{Introduction}
@@ -140,31 +127,24 @@ prompting can improve solution quality and examines the implications of
 AI-assisted programming for future software engineering skills.
 
 
-
 \section{Research Question}
 
-
 The primary research question is:
-
 
 \textbf{
 Can optimized prompt engineering improve algorithmic problem-solving
 performance compared with traditional LeetCode-style approaches?
 }
 
-
 The study investigates three sub-questions:
-
 
 \begin{enumerate}
 
 \item
 Can optimized prompts improve the correctness of generated solutions?
 
-
 \item
 Can prompt engineering improve algorithm and data structure selection?
-
 
 \item
 How may AI-assisted programming change the skills required by future
@@ -172,13 +152,13 @@ software engineers?
 
 \end{enumerate}
 
+
 \input{sections/hypothesis}
+
 
 \section{Background}
 
-
 \subsection{Traditional Algorithm Training}
-
 
 Traditional computer science education emphasizes:
 
@@ -190,56 +170,43 @@ Traditional computer science education emphasizes:
 \end{itemize}
 
 
-
 \subsection{LLM-Assisted Programming}
 
-
 Large Language Models introduce a different development paradigm:
-
 
 \begin{center}
 
 Problem Understanding
-
 $\rightarrow$
-
 Prompt Engineering
-
 $\rightarrow$
-
 AI Generated Solution
-
 $\rightarrow$
-
 Human Verification
-
 $\rightarrow$
-
 Optimization
 
 \end{center}
+
 
 \input{sections/related_work}
 
 
 \section{Methodology}
 
-
 This research proposes a benchmark framework to evaluate different prompting
 strategies for algorithmic problem solving.
 
 
-The experiment compares three approaches:
+\subsection{Prompt Strategies}
 
+The experiment compares three approaches.
 
-\subsection{Baseline Prompt}
-
+\subsubsection{Baseline Prompt}
 
 A minimal prompt asking the model to directly solve the problem.
 
-
-\subsection{Optimized Prompt}
-
+\subsubsection{Optimized Prompt}
 
 A structured prompt requiring:
 
@@ -250,10 +217,7 @@ A structured prompt requiring:
 \item Complexity comparison
 \end{itemize}
 
-
-
-\subsection{AI-Assisted Engineering Workflow}
-
+\subsubsection{AI-Assisted Engineering Workflow}
 
 A multi-step workflow where the model:
 
@@ -265,69 +229,40 @@ A multi-step workflow where the model:
 \end{itemize}
 
 
-\input{sections/evaluation_methodology}
 \input{sections/dataset_design}
+
+\input{sections/evaluation_methodology}
+
+\input{sections/experimental_control}
+
 \input{sections/experimental_protocol}
+
+
 \input{sections/results_analysis}
+
 \input{sections/expected_results}
+
 \input{sections/discussion}
+
 \input{sections/limitations}
-
-
-\section{Experimental Design}
-
-
-The benchmark dataset will contain LeetCode-style problems from multiple
-algorithm categories:
-
-
-\begin{itemize}
-\item Arrays
-\item Hash Tables
-\item Linked Lists
-\item Trees
-\item Graphs
-\item Dynamic Programming
-\end{itemize}
-
-
-
-Each generated solution will be evaluated using:
-
-
-\begin{itemize}
-
-\item Correctness
-\item Time complexity
-\item Space complexity
-\item Runtime performance
-\item Data structure selection
-
-\end{itemize}
-
 
 
 \section{Expected Contribution}
 
-
 This research aims to provide:
-
 
 \begin{enumerate}
 
 \item
 A benchmark framework for evaluating LLM-assisted algorithm problem solving.
 
-
 \item
 An analysis of how prompt engineering affects algorithm design decisions.
-
 
 \item
 Insights into how software engineering skills may evolve in the LLM era.
 
 \end{enumerate}
-
 
 
 \section{Future Work}
@@ -358,9 +293,6 @@ education and technical interview preparation.
 
 \section{Conclusion}
 
-
-\section{Conclusion}
-
 Large Language Models are increasingly changing how software developers
 approach programming tasks. This research proposes an experimental framework
 for investigating whether prompt engineering can improve algorithmic
@@ -387,6 +319,7 @@ problem solving.
 Ultimately, this research aims to contribute to the discussion surrounding
 AI-assisted programming and the evolving skill requirements of future
 software engineers.
+
 
 \bibliographystyle{plain}
 \bibliography{references}
