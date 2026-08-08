@@ -71,44 +71,73 @@ requirements of software engineers.
 
 \section{Introduction}
 
+Large Language Models (LLMs) are rapidly changing the way programming tasks
+are performed. Modern AI systems can generate code, explain algorithms,
+identify implementation errors, and suggest potential optimizations. As these
+capabilities continue to improve, software developers increasingly interact
+with AI systems as part of their development workflow.
 
-Software engineering has historically emphasized strong foundations in
-data structures, algorithms, and computational complexity.
+Traditionally, computer science students develop algorithmic problem-solving
+skills through courses, textbooks, programming exercises, and online coding
+platforms such as LeetCode. These activities emphasize data structures,
+algorithm design, computational complexity, and independent implementation.
+Extensive practice is also commonly used as preparation for technical software
+engineering interviews.
 
-Platforms such as LeetCode have become widely used by computer science students
-to develop algorithmic problem-solving skills and prepare for technical interviews.
+The emergence of LLM-assisted programming introduces a different approach to
+algorithmic problem solving. Instead of independently designing and
+implementing every solution, a developer can describe a problem to an LLM,
+request multiple algorithmic approaches, compare their computational
+complexities, and ask the model to optimize or verify the resulting code.
 
-
-The traditional learning process can be summarized as:
+This creates a potential shift in the traditional programming workflow:
 
 \begin{center}
-Data Structures
+
+Problem Understanding
 $\rightarrow$
-Algorithms
+Algorithm Design
 $\rightarrow$
-Problem Practice
+Implementation
 $\rightarrow$
-Technical Interview Preparation
+Testing
+
 \end{center}
 
+toward an AI-assisted workflow:
 
-However, recent advances in Large Language Models have introduced a new
-software development workflow.
+\begin{center}
 
-Developers can now interact with AI systems to generate solutions, analyze
-complexity, and optimize implementations through carefully designed prompts.
+Problem Understanding
+$\rightarrow$
+Prompt Engineering
+$\rightarrow$
+AI-Generated Solutions
+$\rightarrow$
+Human Verification
+$\rightarrow$
+Optimization
 
+\end{center}
 
-This creates an important research question:
+The emergence of this workflow raises an important question for computer
+science education and software engineering preparation. If LLMs can
+successfully generate and optimize solutions to algorithmic problems, the
+relative importance of traditional problem-solving practice may change.
+However, effective use of AI systems still requires users to formulate
+appropriate instructions, evaluate generated solutions, recognize inefficient
+approaches, and verify correctness.
 
-\begin{quote}
-Can prompt engineering become an alternative or complementary skill to
-traditional algorithm practice?
-\end{quote}
+Therefore, prompt engineering should not necessarily be viewed as a replacement
+for traditional algorithmic knowledge. Instead, it may represent an additional
+skill that complements algorithmic reasoning and changes how programming
+problems are approached.
 
-
-This research explores how AI-assisted programming may influence future
-software engineering education and interview preparation.
+This research investigates this potential transition by proposing a controlled
+experimental framework for comparing different prompting strategies on
+LeetCode-style algorithmic problems. The study evaluates whether structured
+prompting can improve solution quality and examines the implications of
+AI-assisted programming for future software engineering skills.
 
 
 
